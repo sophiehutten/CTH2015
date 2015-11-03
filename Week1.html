@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="stylesheet" href="opmaak1.css">
+      <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css">
+      <link href ="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+   </head>
+   <body class="website">
+      <section>
+         <h1> Assignment 1</h1>
+         <p> Made by Sophie Hutten</p>
+      </section>
+      
+      <section class="buttons">
+         <button class="downbutton" onclick="turnimage_down()" > Down! </button>
+         <button class="leftbutton" onclick="turnimage_left()" > Left! </button>
+         <button class="rightbutton" onclick="turnimage_right()" > Right! </button>
+         <button class="upbutton" onclick="turnimage_up()" > Up! </button>
+      </section>
+      
+      <img id="image1" class="image1" src="http://www.abclogos.nl/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/p/i/pijl31.jpg">
+   
+   
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"> </script>
+      <script>
+         var turnimage_down = function() {
+             $('#image1')[0].style.transform = "rotate(90deg)";
+         }
+         
+         var turnimage_left = function() {
+             $('#image1')[0].style.transform = "rotate(180deg)";
+         }
+         
+         var turnimage_right = function() {
+             $('#image1')[0].style.transform = "rotate(0deg)";
+         }
+         
+         var turnimage_up = function() {
+             $('#image1')[0].style.transform = "rotate(-90deg)";
+         }
+         
+      </script>
+   </body>
+</html>
+
